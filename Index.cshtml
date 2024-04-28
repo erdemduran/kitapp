@@ -1,0 +1,21 @@
+﻿@model Kitap
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitap Bilgileri</title>
+</head>
+<body>
+    <h2>Kitap Bilgileri</h2>
+    <div>
+        <p>Kitap Adı: @Model.KitapAdı</p>
+        <p>Yazar Adı: @Model.YazarAdı</p>
+        <p>Yayınlanma Tarihi: @Model.YayınlanmaTarihi.ToShortDateString()</p>
+        <p>Türü: @Model.Türü</p>
+        <p>Sayfa Sayısı: @Model.SayfaSayısı</p>
+        <p>Fiyat: @Model.Fiyat.ToString("C")</p>
+    </div>
+</body>
+</html>
